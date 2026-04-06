@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>E L N E W | Sovereign Archive</title>
+    
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVRYR8VXTU8TURT9vXmD0EALpS0YShMaE6ImLkxcaNxojAtXLly6MPEnuPAnuHThT+BKf4K6caMLY8IvaEwaS8SPSAtSFNoZ570z0860M9OZtoSbeZOn77577827796ZAn8Z08U8CWAOgNkOAFYAsK7M1fH6P+9rAH4AeA/gmzL/ZscA8+TNAmAXwCUAW3mQGk2rOQHwDsA7AD81B1oD9Lp7AsCNAsh2m0YDY8C3A9uS8z6fXwTwAcB7AH9pS7UCfOfX9XUfAF8pE1PZ3mGj6TUnAD58uVvTADXvXfQYv1YmYlO9z0bTZ04AfFT6fA2Aj5XpOfE+m50B8FEA1mP3rK13PqZf57X6fB+A91/f7wLgI+2vN+m+mBMAH8098S6f5wTAd7W/W+t9KdcAfDTPpP6iTAD8qL+Uf0/n77YFmG8f60uTf03nO8fH873mX1v8Vf75/F2O8N76zZ766XyX+/vMv6X+Tvd369uYv8sc8K76p/K5WvX5Zf4p82+pv9X95vy5GvN7zR/O95p/Xf3eS6X+qnyf97NjgH73vM/ntuQ6rZ3f8Z0697T5u20B5vL5fX0/AL5TpsfU+2w0feYEkA8f79fU6V30GD9WpmfK+2w0febEOn+Y0Wp9O4UvP6fVf86L7u/m5p9C53fW8HfbAkzx6XW98zF9Oq/R59/p9f/C39W82t8FwEfaU/M6Xf6dXv8v/H3No/0zAHykfTUn3udzOn/+nd6v1Py9AHykfXIn7vM5nT9v978r80f6XQDpS5N/SefvK/O95l9b/FX+of0f/Gv8Wf6B99Y/lc/Vqs8v80+Zf0v9re4P9z9nfsn8kvmD7vGv80vm35L5e8396/zS/YPu8X+9z/71N92X8oH6fN7v9z9nfv1l/qnOf6TfTfH5p/N36/9G4C8D/gI7vO3YBytO1AAAAABJRU5ErkJggg==">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Inter:wght@400;800;900&display=swap');
+        :root { --obsidian: #030303; --blood: #660000; --neon-red: #FF0000; --parchment: #E6E2D3; --bronze: #8B7E66; }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body, html { width: 100%; height: 100%; background: var(--obsidian); color: var(--parchment); font-family: 'Inter', sans-serif; overflow: hidden; }
+
+        .watermark { position: fixed; bottom: 50px; right: 20px; transform: rotate(-90deg); transform-origin: right bottom; opacity: 0.15; font-size: 0.4rem; letter-spacing: 0.6rem; color: var(--bronze); z-index: 10000; pointer-events: none; text-transform: uppercase; font-weight: 900; }
+        .enquiry-link { position: fixed; bottom: 30px; left: 30px; opacity: 0.2; font-size: 0.5rem; letter-spacing: 0.3rem; color: var(--bronze); z-index: 10000; text-transform: uppercase; font-weight: 900; text-decoration: none; display: none; }
+
+        #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+        .comet { position: absolute; width: 2px; height: 80px; background: linear-gradient(to bottom, transparent, var(--neon-red), transparent); animation: cometFall linear infinite; }
+        @keyframes cometFall { 0% { transform: translateY(-100px); opacity: 0; } 10% { opacity: 0.6; } 90% { opacity: 0.6; } 100% { transform: translateY(110vh); opacity: 0; } }
+
+        .logo-box { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 1000; transition: 0.8s cubic-bezier(0.9, 0, 0.1, 1); width: 100%; pointer-events: none; }
+        .logo { font-family: 'Cinzel Decorative', serif; font-size: clamp(2.2rem, 11vw, 7.5rem); letter-spacing: 1.5rem; text-indent: 1.5rem; }
+        .tagline { font-weight: 900; letter-spacing: 0.6rem; font-size: 0.55rem; margin-top: 1rem; opacity: 0.3; color: var(--bronze); text-transform: uppercase; }
+        body.revealed .logo-box { top: 6vh; transform: translate(-50%, 0) scale(0.4); }
+
+        .layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: none; flex-direction: column; align-items: center; justify-content: center; transition: 0.4s; z-index: 2000; opacity: 0; }
+        #landing-layer { display: flex; opacity: 1; z-index: 2001; }
+        #archive-layer { padding: 25vh 6vw 10vh; overflow-y: auto; justify-content: flex-start; z-index: 1500; }
+        #popup-layer { background: rgba(0,0,0,0.98); backdrop-filter: blur(25px); z-index: 9000; pointer-events: none; }
+
+        .std-btn { background: none; border: 1px solid rgba(255,255,255,0.1); color: var(--parchment); font-weight: 900; letter-spacing: 0.6rem; font-size: 0.7rem; padding: 20px 45px; text-transform: uppercase; cursor: pointer; transition: 0.3s; margin: 10px; pointer-events: auto; }
+        .std-btn:hover { border-color: var(--neon-red); box-shadow: 0 0 20px rgba(255,0,0,0.1); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 25px; width: 100%; margin-top: 5vh; }
+        @media (min-width: 768px) { .grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px; } }
+        .item { aspect-ratio: 0.75; background: #080808; border: 1px solid #111; display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer; transition: 0.3s; }
+        .item:hover { border-color: var(--neon-red); }
+
+        #article-panel { position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background: #050505; z-index: 8000; transition: 0.6s cubic-bezier(0.9, 0, 0.1, 1); padding: 120px 10% 40px; overflow-y: auto; }
+        #article-panel.active { left: 0; border: 15px solid transparent; border-image-source: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZD0iTTAgMjBMNyAxM0wxNSAyM0wyMiAxMUwzMSAyNEw0MCAyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNMCAyMEw3IDI3TDE1IDE3TDIyIDI5TDMxIDE2TDQwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg=='); border-image-slice: 20%; border-image-repeat: repeat; border-image-width: 15px; }
+
+        .bat-input { width: 100%; max-width: 320px; background: none; border: none; border-bottom: 1px solid #333; color: #fff; padding: 18px; margin-bottom: 30px; text-align: center; font-family: 'Inter'; letter-spacing: 0.2rem; outline: none; }
+        .bat-eyes { display: flex; gap: 18px; margin-bottom: 35px; }
+        .bat-eye { width: 12px; height: 6px; background: var(--neon-red); border-radius: 50%; box-shadow: 0 0 15px var(--neon-red); animation: glow 2s infinite alternate; }
+        @keyframes glow { from { opacity: 0.3; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="watermark">DESIGNED BY THE SOVEREIGN ARCHITECT</div>
+<a href="mailto:elnew3333@gmail.com" class="enquiry-link" id="enq">ENQUIRIES: elnew3333@gmail.com</a>
+<div id="bg-canvas"></div>
+
+<div class="logo-box" id="main-logo">
+    <h1 class="logo">ELNEW</h1>
+    <p class="tagline">CLOTHING 4 STANDARDS.</p>
+</div>
+
+<div id="landing-layer" class="layer">
+    <div style="height: 150px;"></div> <button class="std-btn" onclick="showPopup('music')">I AM THE STANDARD</button>
+</div>
+
+<div id="archive-layer" class="layer">
+    <div class="grid" id="main-grid"></div>
+</div>
+
+<div id="popup-layer" class="layer">
+    <div id="content-music" style="display:none; flex-direction:column; align-items:center; width: 100%;">
+        <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
+        <p style="letter-spacing:0.5rem; text-align:center; font-weight:900; line-height:2.2; margin-bottom:40px;">PUT SOME MUSIC ON <br> WHILE SHOPPING</p>
+        <button class="std-btn" onclick="enterArchive()">[ PROCEED ]</button>
+    </div>
+    
+    <div id="content-form" style="display:none; flex-direction:column; align-items:center; width: 100%;">
+        <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
+        <h3 style="letter-spacing:0.6rem; font-size:0.75rem; margin-bottom:50px;">IDENTIFY FOR ACQUISITION</h3>
+        <input type="text" class="bat-input" placeholder="@INSTAGRAM_HANDLE">
+        <input type="email" class="bat-input" placeholder="EMAIL_ADDRESS">
+        <button class="std-btn" onclick="triggerSuccess()" style="background:var(--blood); border:none; width:320px;">SEND SIGNAL</button>
+        <p onclick="hidePopup()" style="margin-top:40px; font-size:0.6rem; opacity:0.4; letter-spacing:0.4rem; cursor:pointer; font-weight:900; pointer-events:auto;">[ DISCARD ]</p>
+    </div>
+
+    <div id="content-success" style="display:none; flex-direction:column; align-items:center; width: 100%;">
+        <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
+        <p style="letter-spacing:0.8rem; font-weight:900; color:var(--parchment);">SIGNAL SENT</p>
+    </div>
+</div>
+
+<div id="article-panel">
+    <button onclick="closeArt()" style="background:none; border:none; color:var(--bronze); letter-spacing:0.4rem; font-size:0.6rem; margin-bottom:50px; font-weight:900; cursor:pointer; text-transform: uppercase;">[ BACK TO ARCHIVE ]</button>
+    <h2 id="art-title" style="font-family:'Cinzel Decorative'; font-size:2.5rem;">---</h2>
+    <p style="color:var(--neon-red); font-size:0.65rem; letter-spacing:0.5rem; margin:20px 0 35px; font-weight:900;">VALUE: SOVEREIGNTY</p>
+    <p id="art-desc" style="line-height:2.2; color:var(--bronze); margin-bottom:60px; font-size:1rem; max-width:550px;">---</p>
+    <button class="std-btn" style="width:100%; border-color:var(--blood);" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+</div>
+
+<script>
+    const DATA = [
+        { id: 'VAL-01', title: 'ARCHIVE SOCKS', desc: 'THE FOUNDATION. REINFORCED FOR THE PATH.' },
+        { id: 'VAL-02', title: 'SOVEREIGN TEE', desc: 'HEAVYWEIGHT 320GSM COTTON. MINIMAL NOISE.' },
+        { id: 'VAL-03', title: 'VOID SWEATPANTS', desc: 'ARCHITECTURAL CUT. DESIGNED FOR STILLNESS.' },
+        { id: 'VAL-04', title: 'ELIS SWEATSHIRT', desc: 'MAXIMAL COMFORT. THE MID-TIER STANDARD.' },
+        { id: 'VAL-05', title: 'ETHIC HOODIE', desc: 'THE SUPREME ASSET. SPIRITUAL ARMOR.' }
+    ];
+
+    const canvas = document.getElementById('bg-canvas');
+    for (let i = 0; i < 15; i++) {
+        const c = document.createElement('div');
+        c.className = 'comet';
+        c.style.left = Math.random() * 100 + '%';
+        c.style.animationDuration = (Math.random() * 1 + 1) + 's';
+        canvas.appendChild(c);
+    }
+
+    const grid = document.getElementById('main-grid');
+    DATA.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'item';
+        div.innerHTML = `<span style="opacity:0.1; font-size:0.4rem; letter-spacing:0.3rem;">ARCHIVE</span><span style="font-size:0.55rem; letter-spacing:0.4rem; margin-top:12px; font-weight:900;">${item.id}</span>`;
+        div.onclick = () => {
+            document.getElementById('art-title').innerText = item.title;
+            document.getElementById('art-desc').innerText = item.desc;
+            document.getElementById('article-panel').classList.add('active');
+        };
+        grid.appendChild(div);
+    });
+
+    function showPopup(type) {
+        const layer = document.getElementById('popup-layer');
+        document.getElementById('content-music').style.display = 'none';
+        document.getElementById('content-form').style.display = 'none';
+        document.getElementById('content-success').style.display = 'none';
+        document.getElementById('content-' + type).style.display = 'flex';
+        layer.style.display = 'flex';
+        layer.style.pointerEvents = 'auto';
+        setTimeout(() => { layer.style.opacity = '1'; }, 10);
+    }
+
+    function hidePopup() {
+        const layer = document.getElementById('popup-layer');
+        layer.style.opacity = '0';
+        layer.style.pointerEvents = 'none';
+        setTimeout(() => { layer.style.display = 'none'; }, 400);
+    }
+
+    function enterArchive() {
+        hidePopup();
+        document.body.classList.add('revealed');
+        document.getElementById('landing-layer').style.display = 'none';
+        document.getElementById('archive-layer').style.display = 'flex';
+        setTimeout(() => { document.getElementById('archive-layer').style.opacity = '1'; }, 100);
+        document.getElementById('enq').style.display = 'block';
+    }
+
+    function closeArt() { document.getElementById('article-panel').classList.remove('active'); }
+
+    function triggerSuccess() {
+        showPopup('success');
+        setTimeout(() => { hidePopup(); }, 2500);
+    }
+</script>
+</body>
+</html>
