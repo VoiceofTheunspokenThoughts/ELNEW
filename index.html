@@ -4,48 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>E L N E W | Sovereign Archive</title>
-    
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVRYR8VXTU8TURT9vXmD0EALpS0YShMaE6ImLkxcaNxojAtXLly6MPEnuPAnuHThT+BKf4K6caMLY8IvaEwaS8SPSAtSFNoZ570z0860M9OZtoSbeZOn77577827796ZAn8Z08U8CWAOgNkOAFYAsK7M1fH6P+9rAH4AeA/gmzL/ZscA8+TNAmAXwCUAW3mQGk2rOQHwDsA7AD81B1oD9Lp7AsCNAsh2m0YDY8C3A9uS8z6fXwTwAcB7AH9pS7UCfOfX9XUfAF8pE1PZ3mGj6TUnAD58uVvTADXvXfQYv1YmYlO9z0bTZ04AfFT6fA2Aj5XpOfE+m50B8FEA1mP3rK13PqZf57X6fB+A91/f7wLgI+2vN+m+mBMAH8098S6f5wTAd7W/W+t9KdcAfDTPpP6iTAD8qL+Uf0/n77YFmG8f60uTf03nO8fH873mX1v8Vf75/F2O8N76zZ766XyX+/vMv6X+Tvd369uYv8sc8K76p/K5WvX5Zf4p82+pv9X95vy5GvN7zR/O95p/Xf3eS6X+qnyf97NjgH73vM/ntuQ6rZ3f8Z0697T5u20B5vL5fX0/AL5TpsfU+2w0feYEkA8f79fU6V30GD9WpmfK+2w0febEOn+Y0Wp9O4UvP6fVf86L7u/m5p9C53fW8HfbAkzx6XW98zF9Oq/R59/p9f/C39W82t8FwEfaU/M6Xf6dXv8v/H3No/0zAHykfTUn3udzOn/+nd6v1Py9AHykfXIn7vM5nT9v978r80f6XQDpS5N/SefvK/O95l9b/FX+of0f/Gv8Wf6B99Y/lc/Vqs8v80+Zf0v9re4P9z9nfsn8kvmD7vGv80vm35L5e8396/zS/YPu8X+9z/71N92X8oH6fN7v9z9nfv1l/qnOf6TfTfH5p/N36/9G4C8D/gI7vO3YBytO1AAAAABJRU5ErkJggg==">
-
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACv0lEQVRYR8VXTU8TURT9vXmD0EALpS0YShMaE6ImLkxcaNxojAtXLly6MPEnuHThT+BKf4K6caMLY8IvaEwaS8SPSAtSFNoZ570z0860M9OZtoSbeZOn77977827796ZAn8Z08U8CWAOgNkOAFYAsK7M1fH6P+9rAH4AeA/gmzL/ZscA8+TNAmAXwCUAW3mQGk2rOQHwDsA7AD81B1oD9Lp7AsCNAsh2m0YDY8C3A9uS8z6fXwTwAcB7AH9pS7UCfOfX9XUfAF8pE1PZ3mGj6TUnAD58uVvTADXvXfQYv1YmYlO9z0bTZ04AfFT6fA2Aj5XpOfE+m50B8FEA1mP3rK13PqZf57X6fB+A91/f7wLgI+2vN+m+mBMAH8098S6f5wTAd7W/W+t9KdcAfDTPpP6iTAD8qL+Uf0/n77YFmG8f60uTf03nO8fH873mX1v8Vf75/F2O8N76zZ766XyX+/vMv6X+Tvd369uYv8sc8K76p/K5WvX5Zf4p82+pv9X95vy5GvN7zR/O95p/Xf3eS6X+qnyf97NjgH73vM/ntuQ6rZ3f8Z0697T5u20B5vL5fX0/AL5TpsfU+2w0feYEkA8f79fU6V30GD9WpmfK+2w0febEOn+Y0Wp9O4UvP6fVf86L7u/m5p9C53fW8HfbAkzx6XW98zF9Oq/R59/p9f/C39W82t8FwEfaU/M6Xf6dXv8v/H3No/0zAHykfTUn3udzOn/+nd6v1Py9AHykfXIn7vM5nT9v978r80f6XQDpS5N/SefvK/O95l9b/FX+of0f/Gv8Wf6B99Y/lc/Vqs8v80+Zf0v9re4P9z9nfsn8kvmD7vGv80vm35L5e8396/zS/YPu8X+9z/71N92X8oH6fN7v9z9nfv1l/qnOf6TfTfH5p/N36/9G4C8D/gI7vO3YBytO1AAAAABJRU5ErkJggg==">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Inter:wght@400;800;900&display=swap');
-        :root { --obsidian: #030303; --blood: #660000; --neon-red: #FF0000; --parchment: #E6E2D3; --bronze: #8B7E66; }
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body, html { width: 100%; height: 100%; background: var(--obsidian); color: var(--parchment); font-family: 'Inter', sans-serif; overflow: hidden; }
+        :root{--obsidian:#030303;--blood:#660000;--neon-red:#FF0000;--parchment:#E6E2D3;--bronze:#8B7E66;}
+        *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+        body,html{width:100%;height:100%;background:var(--obsidian);color:var(--parchment);font-family:'Inter',sans-serif;overflow:hidden;}
 
-        .watermark { position: fixed; bottom: 50px; right: 20px; transform: rotate(-90deg); transform-origin: right bottom; opacity: 0.15; font-size: 0.4rem; letter-spacing: 0.6rem; color: var(--bronze); z-index: 10000; pointer-events: none; text-transform: uppercase; font-weight: 900; }
-        .enquiry-link { position: fixed; bottom: 30px; left: 30px; opacity: 0.2; font-size: 0.5rem; letter-spacing: 0.3rem; color: var(--bronze); z-index: 10000; text-transform: uppercase; font-weight: 900; text-decoration: none; display: none; }
+        /* RAIN */
+        #bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;pointer-events:none;}
+        .comet{position:absolute;width:2px;height:80px;background:linear-gradient(to bottom,transparent,var(--neon-red),transparent);animation:cometFall linear infinite;}
+        @keyframes cometFall{0%{transform:translateY(-100px);opacity:0;}10%{opacity:0.6;}90%{opacity:0.6;}100%{transform:translateY(110vh);opacity:0;}}
 
-        #bg-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
-        .comet { position: absolute; width: 2px; height: 80px; background: linear-gradient(to bottom, transparent, var(--neon-red), transparent); animation: cometFall linear infinite; }
-        @keyframes cometFall { 0% { transform: translateY(-100px); opacity: 0; } 10% { opacity: 0.6; } 90% { opacity: 0.6; } 100% { transform: translateY(110vh); opacity: 0; } }
+        /* WATERMARK */
+        .watermark{position:fixed;bottom:50px;right:20px;transform:rotate(-90deg);transform-origin:right bottom;opacity:0.15;font-size:0.4rem;letter-spacing:0.6rem;color:var(--bronze);z-index:10000;pointer-events:none;text-transform:uppercase;font-weight:900;}
+        .enquiry-link{position:fixed;bottom:30px;left:30px;opacity:0.2;font-size:0.5rem;letter-spacing:0.3rem;color:var(--bronze);z-index:10000;text-transform:uppercase;font-weight:900;text-decoration:none;display:none;}
 
-        .logo-box { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 1000; transition: 0.8s cubic-bezier(0.9, 0, 0.1, 1); width: 100%; pointer-events: none; }
-        .logo { font-family: 'Cinzel Decorative', serif; font-size: clamp(2.2rem, 11vw, 7.5rem); letter-spacing: 1.5rem; text-indent: 1.5rem; }
-        .tagline { font-weight: 900; letter-spacing: 0.6rem; font-size: 0.55rem; margin-top: 1rem; opacity: 0.3; color: var(--bronze); text-transform: uppercase; }
-        body.revealed .logo-box { top: 6vh; transform: translate(-50%, 0) scale(0.4); }
+        /* LOGO */
+        .logo-box{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:1000;transition:top 0.8s cubic-bezier(0.9,0,0.1,1),left 0.8s cubic-bezier(0.9,0,0.1,1),transform 0.8s cubic-bezier(0.9,0,0.1,1);width:100%;pointer-events:none;}
+        .logo{font-family:'Cinzel Decorative',serif;font-size:clamp(2.2rem,11vw,7.5rem);letter-spacing:1.5rem;text-indent:1.5rem;transition:font-size 0.8s cubic-bezier(0.9,0,0.1,1),letter-spacing 0.8s cubic-bezier(0.9,0,0.1,1);}
+        .tagline{font-weight:900;letter-spacing:0.6rem;font-size:0.55rem;margin-top:1rem;opacity:0.3;color:var(--bronze);text-transform:uppercase;transition:opacity 0.4s;}
+        body.revealed .logo-box{top:20px;left:22px;transform:translate(0,0);width:auto;text-align:left;}
+        body.revealed .logo{font-size:clamp(0.9rem,2.8vw,1.5rem);letter-spacing:0.4rem;text-indent:0.4rem;}
+        body.revealed .tagline{opacity:0;pointer-events:none;}
 
-        .layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: none; flex-direction: column; align-items: center; justify-content: center; transition: 0.4s; z-index: 2000; opacity: 0; }
-        #landing-layer { display: flex; opacity: 1; z-index: 2001; }
-        #archive-layer { padding: 20vh 6vw 10vh; overflow-y: auto; justify-content: flex-start; z-index: 1500; align-items: flex-start; }
-        #popup-layer { background: rgba(0,0,0,0.98); backdrop-filter: blur(25px); z-index: 9000; pointer-events: none; }
+        /* LAYERS */
+        .layer{position:fixed;top:0;left:0;width:100%;height:100%;display:none;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.4s;z-index:2000;opacity:0;}
+        #landing-layer{display:flex;opacity:1;z-index:2001;}
+        #popup-layer{background:rgba(0,0,0,0.98);backdrop-filter:blur(25px);z-index:9000;pointer-events:none;}
 
-        .std-btn { background: none; border: 1px solid rgba(255,255,255,0.1); color: var(--parchment); font-weight: 900; letter-spacing: 0.6rem; font-size: 0.7rem; padding: 20px 45px; text-transform: uppercase; cursor: pointer; transition: 0.3s; margin: 10px; pointer-events: auto; }
-        .std-btn:hover { border-color: var(--neon-red); box-shadow: 0 0 20px rgba(255,0,0,0.1); }
+        /* BUTTONS */
+        .std-btn{background:none;border:1px solid rgba(255,255,255,0.1);color:var(--parchment);font-weight:900;letter-spacing:0.6rem;font-size:clamp(0.55rem,1.8vw,0.75rem);padding:clamp(14px,3vw,20px) clamp(24px,5vw,45px);text-transform:uppercase;cursor:pointer;transition:0.3s;margin:10px;pointer-events:auto;font-family:'Inter',sans-serif;}
+        .std-btn:hover{border-color:var(--neon-red);box-shadow:0 0 20px rgba(255,0,0,0.1);}
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 25px; width: 100%; margin-top: 2vh; }
-        @media (min-width: 768px) { .grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px; } }
-        .item { aspect-ratio: 0.75; background: #080808; border: 1px solid #111; display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer; transition: 0.3s; }
-        .item:hover { border-color: var(--neon-red); }
+        /* BAT EYES */
+        .bat-eyes{display:flex;gap:18px;margin-bottom:35px;}
+        .bat-eye{width:12px;height:6px;background:var(--neon-red);border-radius:50%;box-shadow:0 0 15px var(--neon-red);animation:glow 2s infinite alternate;}
+        @keyframes glow{from{opacity:0.3;}to{opacity:1;}}
 
-        #article-panel { position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background: #050505; z-index: 8000; transition: 0.6s cubic-bezier(0.9, 0, 0.1, 1); padding: 120px 10% 40px; overflow-y: auto; }
-        #article-panel.active { left: 0; }
+        /* FORM */
+        .bat-input{width:100%;max-width:320px;background:none;border:none;border-bottom:1px solid #333;color:#fff;padding:18px;margin-bottom:30px;text-align:center;font-family:'Inter';letter-spacing:0.2rem;outline:none;font-size:clamp(0.7rem,2vw,1rem);}
 
-        .bat-input { width: 100%; max-width: 320px; background: none; border: none; border-bottom: 1px solid #333; color: #fff; padding: 18px; margin-bottom: 30px; text-align: center; font-family: 'Inter'; letter-spacing: 0.2rem; outline: none; }
-        .bat-eyes { display: flex; gap: 18px; margin-bottom: 35px; }
-        .bat-eye { width: 12px; height: 6px; background: var(--neon-red); border-radius: 50%; box-shadow: 0 0 15px var(--neon-red); animation: glow 2s infinite alternate; }
-        @keyframes glow { from { opacity: 0.3; } to { opacity: 1; } }
+        /* PRODUCT SHELL */
+        #product-shell{position:fixed;inset:0;z-index:3000;display:none;opacity:0;transition:opacity 0.5s;}
+
+        /* SLIDES */
+        .slide{position:absolute;inset:0;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:clamp(20px,5vw,70px);padding:clamp(90px,16vh,140px) clamp(20px,6vw,60px) clamp(70px,12vh,110px);opacity:0;pointer-events:none;transition:opacity 0.55s cubic-bezier(0.77,0,0.18,1),transform 0.55s cubic-bezier(0.77,0,0.18,1);transform:translateX(60px);flex-wrap:wrap;}
+        .slide.slide-enter-right{transform:translateX(60px);opacity:0;}
+        .slide.slide-enter-left{transform:translateX(-60px);opacity:0;}
+        .slide.active{opacity:1;pointer-events:auto;transform:translateX(0);}
+        .slide.slide-exit-left{transform:translateX(-60px);opacity:0;pointer-events:none;}
+        .slide.slide-exit-right{transform:translateX(60px);opacity:0;pointer-events:none;}
+
+        /* SLIDE CONTENT COLUMNS */
+        .slide-img{flex:0 0 auto;display:flex;align-items:center;justify-content:center;}
+        .slide-img svg{width:clamp(140px,28vw,260px);height:auto;filter:drop-shadow(0 0 18px rgba(180,0,0,0.18));}
+        .slide-info{flex:1 1 200px;min-width:160px;max-width:380px;text-align:left;}
+
+        /* on small screens, stack vertically */
+        @media(max-width:600px){
+            .slide{flex-direction:column;align-items:center;gap:16px;}
+            .slide-info{text-align:center;min-width:unset;}
+            .slide-img svg{width:clamp(110px,50vw,180px);}
+        }
+
+        .slide-num{font-size:clamp(0.38rem,1.1vw,0.48rem);letter-spacing:0.5rem;color:var(--blood);text-transform:uppercase;margin-bottom:clamp(10px,2.5vh,22px);font-weight:900;}
+        .prod-title{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,4.5vw,2.8rem);letter-spacing:clamp(0.15rem,1vw,0.7rem);color:var(--parchment);margin-bottom:clamp(8px,1.8vh,18px);line-height:1.15;}
+        .prod-rule{width:clamp(30px,6vw,60px);height:1px;background:var(--blood);margin:0 0 clamp(10px,2vh,18px);}
+        @media(max-width:600px){.prod-rule{margin:0 auto clamp(10px,2vh,18px);}}
+        .prod-desc{font-size:clamp(0.55rem,1.4vw,0.75rem);letter-spacing:0.22rem;color:var(--bronze);line-height:2.2;max-width:340px;margin-bottom:clamp(18px,3.5vh,36px);text-transform:uppercase;font-weight:900;}
+        .acquire-btn{background:none;border:1px solid var(--blood);color:var(--parchment);font-weight:900;letter-spacing:0.5rem;font-size:clamp(0.48rem,1.3vw,0.65rem);padding:clamp(11px,2vw,16px) clamp(22px,4vw,38px);text-transform:uppercase;cursor:pointer;transition:0.3s;font-family:'Inter',sans-serif;}
+        .acquire-btn:hover{background:var(--blood);box-shadow:0 0 30px rgba(102,0,0,0.4);}
+
+        /* NAV BAR */
+        .nav-bar{position:fixed;bottom:clamp(18px,3.5vh,40px);left:50%;transform:translateX(-50%);display:none;align-items:center;gap:clamp(12px,3.5vw,28px);z-index:4000;}
+        .nav-arrow{background:none;border:1px solid rgba(255,255,255,0.1);color:var(--parchment);cursor:pointer;font-size:clamp(0.48rem,1.3vw,0.6rem);letter-spacing:0.36rem;font-weight:900;padding:clamp(8px,1.8vw,12px) clamp(14px,2.5vw,24px);transition:0.3s;text-transform:uppercase;font-family:'Inter',sans-serif;}
+        .nav-arrow:hover{border-color:var(--neon-red);color:var(--neon-red);}
+        .nav-arrow:disabled{opacity:0.18;pointer-events:none;cursor:default;}
+        .dot-row{display:flex;gap:7px;align-items:center;}
+        .dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.15);transition:background 0.3s,transform 0.3s;}
+        .dot.active{background:var(--neon-red);transform:scale(1.4);}
+
+        /* EXIT BTN */
+        #exit-btn{position:fixed;top:clamp(12px,2vh,24px);right:clamp(14px,2.5vw,28px);background:none;border:1px solid rgba(255,255,255,0.07);color:var(--bronze);letter-spacing:0.32rem;font-size:clamp(0.4rem,1vw,0.55rem);padding:clamp(6px,1.2vw,9px) clamp(12px,2vw,18px);font-weight:900;cursor:pointer;text-transform:uppercase;z-index:5000;display:none;font-family:'Inter',sans-serif;transition:0.3s;}
+        #exit-btn:hover{border-color:var(--bronze);color:var(--parchment);}
+
+        /* END POPUP */
+        #end-popup{position:fixed;inset:0;background:rgba(3,3,3,0.97);backdrop-filter:blur(28px);z-index:8000;display:none;flex-direction:column;align-items:center;justify-content:center;opacity:0;transition:opacity 0.5s;pointer-events:none;}
+        #end-popup.open{display:flex;}
+        .end-title{font-family:'Cinzel Decorative',serif;font-size:clamp(1rem,4.5vw,2.4rem);letter-spacing:clamp(0.2rem,1vw,0.65rem);color:var(--parchment);text-align:center;line-height:1.6;margin-bottom:clamp(20px,5vh,50px);max-width:88vw;}
+
+        @media(max-width:480px){.watermark{display:none;}.enquiry-link{font-size:0.42rem;left:16px;bottom:16px;}}
     </style>
 </head>
 <body>
@@ -59,120 +108,456 @@
     <p class="tagline">CLOTHING 4 STANDARDS.</p>
 </div>
 
+<button id="exit-btn" onclick="exitToLanding()">[ EXIT TO PORTAL ]</button>
+
+<!-- LANDING -->
 <div id="landing-layer" class="layer">
-    <div style="height: 150px;"></div> <button class="std-btn" onclick="showPopup('music')">I AM THE STANDARD</button>
+    <div style="height:160px;"></div>
+    <button class="std-btn" onclick="showPopup('music')">I AM THE STANDARD</button>
 </div>
 
-<div id="archive-layer" class="layer">
-    <button onclick="exitToLanding()" style="background:none; border:1px solid rgba(255,255,255,0.1); color:var(--bronze); letter-spacing:0.4rem; font-size:0.6rem; margin-bottom:20px; padding: 10px 20px; font-weight:900; cursor:pointer; text-transform: uppercase; pointer-events: auto;">[ EXIT TO PORTAL ]</button>
-    <div class="grid" id="main-grid"></div>
-</div>
-
+<!-- POPUP LAYER -->
 <div id="popup-layer" class="layer">
-    <div id="content-music" style="display:none; flex-direction:column; align-items:center; width: 100%;">
+    <div id="content-music" style="display:none;flex-direction:column;align-items:center;width:100%;">
         <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
-        <p style="letter-spacing:0.5rem; text-align:center; font-weight:900; line-height:2.2; margin-bottom:40px;">PUT SOME MUSIC ON <br> WHILE SHOPPING</p>
+        <p style="letter-spacing:0.5rem;text-align:center;font-weight:900;line-height:2.5;margin-bottom:40px;font-size:clamp(0.6rem,2vw,0.85rem);">PUT SOME MUSIC ON<br>WHILE SHOPPING</p>
         <button class="std-btn" onclick="enterArchive()">[ PROCEED ]</button>
     </div>
-    
-    <div id="content-form" style="display:none; flex-direction:column; align-items:center; width: 100%;">
+    <div id="content-form" style="display:none;flex-direction:column;align-items:center;width:100%;">
         <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
-        <h3 style="letter-spacing:0.6rem; font-size:0.75rem; margin-bottom:50px;">IDENTIFY FOR ACQUISITION</h3>
+        <h3 style="letter-spacing:0.6rem;font-size:clamp(0.6rem,1.8vw,0.75rem);margin-bottom:40px;font-weight:900;">IDENTIFY FOR ACQUISITION</h3>
         <input type="text" class="bat-input" placeholder="@INSTAGRAM_HANDLE">
         <input type="email" class="bat-input" placeholder="EMAIL_ADDRESS">
-        <button class="std-btn" onclick="triggerSuccess()" style="background:var(--blood); border:none; width:320px;">SEND SIGNAL</button>
-        <p onclick="hidePopup()" style="margin-top:40px; font-size:0.6rem; opacity:0.4; letter-spacing:0.4rem; cursor:pointer; font-weight:900; pointer-events:auto;">[ DISCARD ]</p>
+        <button class="std-btn" onclick="triggerSuccess()" style="background:var(--blood);border:none;width:min(320px,80vw);">SEND SIGNAL</button>
+        <p onclick="hidePopup()" style="margin-top:36px;font-size:0.6rem;opacity:0.4;letter-spacing:0.4rem;cursor:pointer;font-weight:900;pointer-events:auto;">[ DISCARD ]</p>
     </div>
-
-    <div id="content-success" style="display:none; flex-direction:column; align-items:center; width: 100%;">
+    <div id="content-success" style="display:none;flex-direction:column;align-items:center;width:100%;">
         <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
-        <p style="letter-spacing:0.8rem; font-weight:900; color:var(--parchment);">SIGNAL SENT</p>
+        <p style="letter-spacing:0.8rem;font-weight:900;color:var(--parchment);font-size:clamp(0.7rem,2vw,1rem);">SIGNAL SENT</p>
     </div>
 </div>
 
-<div id="article-panel">
-    <button onclick="closeArt()" style="background:none; border:none; color:var(--bronze); letter-spacing:0.4rem; font-size:0.6rem; margin-bottom:50px; font-weight:900; cursor:pointer; text-transform: uppercase;">[ BACK ]</button>
-    <h2 id="art-title" style="font-family:'Cinzel Decorative'; font-size:2.5rem;">---</h2>
-    <p style="color:var(--neon-red); font-size:0.65rem; letter-spacing:0.5rem; margin:20px 0 35px; font-weight:900;">VALUE: SOVEREIGNTY</p>
-    <p id="art-desc" style="line-height:2.2; color:var(--bronze); margin-bottom:60px; font-size:1rem; max-width:550px;">---</p>
-    <button class="std-btn" style="width:100%; border-color:var(--blood);" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+<!-- ═══════════════════════════════════════
+     PRODUCT SHELL
+═══════════════════════════════════════ -->
+<div id="product-shell">
+
+<!-- ─── SLIDE 1: SOCKS ─── -->
+<div class="slide active" data-index="0">
+    <div class="slide-img">
+        <!-- RED SOCKS WITH BLACK EYES AT ANKLET TOP -->
+        <svg viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- Left sock -->
+            <g transform="translate(18,0)">
+                <!-- Sock body -->
+                <path d="M30 30 L30 200 Q30 240 60 255 Q85 268 100 255 Q115 240 112 200 L112 30 Z" fill="#8B1A1A" stroke="#6a0f0f" stroke-width="1.5"/>
+                <!-- Sock toe/heel shaping -->
+                <path d="M30 200 Q28 230 50 248 Q70 262 90 258 Q110 252 112 230 L112 200" fill="#7a1515" stroke="none"/>
+                <!-- Sole shadow -->
+                <path d="M38 245 Q65 268 95 255" stroke="#4a0a0a" stroke-width="2" fill="none"/>
+                <!-- Ribbed cuff at top (anklet area) -->
+                <rect x="30" y="28" width="82" height="6" rx="2" fill="#6a1010" opacity="0.8"/>
+                <rect x="30" y="20" width="82" height="10" rx="3" fill="#7a1818" stroke="#5a0e0e" stroke-width="1"/>
+                <!-- Ribbing lines -->
+                <line x1="40" y1="20" x2="40" y2="30" stroke="#5a0e0e" stroke-width="1" opacity="0.5"/>
+                <line x1="52" y1="20" x2="52" y2="30" stroke="#5a0e0e" stroke-width="1" opacity="0.5"/>
+                <line x1="64" y1="20" x2="64" y2="30" stroke="#5a0e0e" stroke-width="1" opacity="0.5"/>
+                <line x1="76" y1="20" x2="76" y2="30" stroke="#5a0e0e" stroke-width="1" opacity="0.5"/>
+                <line x1="88" y1="20" x2="88" y2="30" stroke="#5a0e0e" stroke-width="1" opacity="0.5"/>
+                <line x1="100" y1="20" x2="100" y2="30" stroke="#5a0e0e" stroke-width="1" opacity="0.5"/>
+                <!-- BLACK EYE at anklet top (cuff) -->
+                <ellipse cx="71" cy="25" rx="9" ry="5" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="0.8"/>
+                <!-- Iris -->
+                <ellipse cx="71" cy="25" rx="5.5" ry="3.2" fill="#1c0000"/>
+                <!-- Pupil -->
+                <ellipse cx="71" cy="25" rx="3" ry="1.8" fill="#030303"/>
+                <!-- Highlight -->
+                <ellipse cx="68.5" cy="23.5" rx="1.2" ry="0.8" fill="rgba(255,255,255,0.35)"/>
+            </g>
+
+            <!-- Right sock (slightly behind/offset) -->
+            <g transform="translate(105,18)">
+                <path d="M30 30 L30 200 Q30 240 60 255 Q85 268 100 255 Q115 240 112 200 L112 30 Z" fill="#7a1515" stroke="#5a0e0e" stroke-width="1.5"/>
+                <path d="M30 200 Q28 230 50 248 Q70 262 90 258 Q110 252 112 230 L112 200" fill="#6a1010" stroke="none"/>
+                <path d="M38 245 Q65 268 95 255" stroke="#3a0808" stroke-width="2" fill="none"/>
+                <rect x="30" y="28" width="82" height="6" rx="2" fill="#5a1010" opacity="0.8"/>
+                <rect x="30" y="20" width="82" height="10" rx="3" fill="#6a1515" stroke="#4a0c0c" stroke-width="1"/>
+                <line x1="40" y1="20" x2="40" y2="30" stroke="#4a0c0c" stroke-width="1" opacity="0.5"/>
+                <line x1="52" y1="20" x2="52" y2="30" stroke="#4a0c0c" stroke-width="1" opacity="0.5"/>
+                <line x1="64" y1="20" x2="64" y2="30" stroke="#4a0c0c" stroke-width="1" opacity="0.5"/>
+                <line x1="76" y1="20" x2="76" y2="30" stroke="#4a0c0c" stroke-width="1" opacity="0.5"/>
+                <line x1="88" y1="20" x2="88" y2="30" stroke="#4a0c0c" stroke-width="1" opacity="0.5"/>
+                <line x1="100" y1="20" x2="100" y2="30" stroke="#4a0c0c" stroke-width="1" opacity="0.5"/>
+                <!-- BLACK EYE -->
+                <ellipse cx="71" cy="25" rx="9" ry="5" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="0.8"/>
+                <ellipse cx="71" cy="25" rx="5.5" ry="3.2" fill="#1c0000"/>
+                <ellipse cx="71" cy="25" rx="3" ry="1.8" fill="#030303"/>
+                <ellipse cx="68.5" cy="23.5" rx="1.2" ry="0.8" fill="rgba(255,255,255,0.35)"/>
+            </g>
+        </svg>
+    </div>
+    <div class="slide-info">
+        <div class="slide-num">ARCHIVE — 01 / 05</div>
+        <h2 class="prod-title">ARCHIVE<br>SOCKS</h2>
+        <div class="prod-rule"></div>
+        <p class="prod-desc">The foundation.<br>Reinforced for the path.<br>Every standard begins<br>at the ground.</p>
+        <button class="acquire-btn" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+    </div>
+</div>
+
+<!-- ─── SLIDE 2: SWEATPANTS ─── -->
+<div class="slide" data-index="1">
+    <div class="slide-img">
+        <!-- BLACK SWEATPANTS, RED EYE ON RIGHT THIGH -->
+        <svg viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- Waistband -->
+            <rect x="30" y="0" width="140" height="22" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+            <!-- Drawstring -->
+            <line x1="80" y1="8" x2="70" y2="22" stroke="#333" stroke-width="1.5"/>
+            <line x1="120" y1="8" x2="130" y2="22" stroke="#333" stroke-width="1.5"/>
+            <circle cx="80" cy="7" r="3" fill="#252525" stroke="#333" stroke-width="1"/>
+            <circle cx="120" cy="7" r="3" fill="#252525" stroke="#333" stroke-width="1"/>
+            <!-- Waistband detail lines -->
+            <line x1="30" y1="8" x2="170" y2="8" stroke="#222" stroke-width="1" opacity="0.6"/>
+            <!-- Body of pants -->
+            <path d="M30 22 L28 180 Q27 200 40 210 L80 215 Q95 217 100 215 L120 215 Q133 217 160 210 L172 180 L170 22 Z" fill="#111111" stroke="#1e1e1e" stroke-width="1.5"/>
+            <!-- Crotch divide -->
+            <path d="M100 215 L100 120 Q100 110 95 100" stroke="#1e1e1e" stroke-width="1.5" fill="none"/>
+            <!-- Left leg -->
+            <path d="M28 180 Q27 200 40 210 L80 215 L85 310 Q84 318 78 318 L55 318 Q48 318 47 310 L40 210" fill="#0e0e0e" stroke="#1e1e1e" stroke-width="1"/>
+            <!-- Right leg -->
+            <path d="M172 180 Q173 200 160 210 L120 215 L115 310 Q116 318 122 318 L145 318 Q152 318 153 310 L160 210" fill="#0e0e0e" stroke="#1e1e1e" stroke-width="1"/>
+            <!-- Right thigh seam detail -->
+            <path d="M138 50 Q140 120 138 200" stroke="#181818" stroke-width="1" fill="none"/>
+            <!-- LEFT thigh seam -->
+            <path d="M62 50 Q60 120 62 200" stroke="#181818" stroke-width="1" fill="none"/>
+            <!-- POCKET outline right -->
+            <path d="M138 60 Q155 62 158 80 L155 100 Q138 102 135 100 L132 80 Q133 62 138 60 Z" stroke="#222" stroke-width="1" fill="none" opacity="0.5"/>
+
+            <!-- RED EYE on RIGHT thigh (right side, mid thigh) -->
+            <ellipse cx="148" cy="130" rx="13" ry="8" fill="#8B0000" stroke="#660000" stroke-width="1"/>
+            <!-- Iris -->
+            <ellipse cx="148" cy="130" rx="8" ry="5" fill="#5a0000"/>
+            <!-- Pupil -->
+            <ellipse cx="148" cy="130" rx="4.5" ry="3" fill="#0a0000"/>
+            <!-- Highlight -->
+            <ellipse cx="144.5" cy="127.5" rx="2" ry="1.3" fill="rgba(255,180,180,0.25)"/>
+            <!-- Subtle glow -->
+            <ellipse cx="148" cy="130" rx="15" ry="9.5" fill="none" stroke="#8B0000" stroke-width="0.5" opacity="0.3"/>
+
+            <!-- Leg ribbing at ankle -->
+            <rect x="47" y="308" width="38" height="10" rx="2" fill="#161616" stroke="#222" stroke-width="0.8"/>
+            <rect x="115" y="308" width="38" height="10" rx="2" fill="#161616" stroke="#222" stroke-width="0.8"/>
+        </svg>
+    </div>
+    <div class="slide-info">
+        <div class="slide-num">ARCHIVE — 02 / 05</div>
+        <h2 class="prod-title">VOID<br>SWEATPANTS</h2>
+        <div class="prod-rule"></div>
+        <p class="prod-desc">Architectural cut.<br>Designed for stillness.<br>Movement with intention.</p>
+        <button class="acquire-btn" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+    </div>
+</div>
+
+<!-- ─── SLIDE 3: T-SHIRT ─── -->
+<div class="slide" data-index="2">
+    <div class="slide-img">
+        <!-- BLACK TEE, SMALL RED EYE AT SOLAR PLEXUS -->
+        <svg viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- Left sleeve -->
+            <path d="M10 30 Q0 35 2 65 L35 75 L40 45 Z" fill="#111" stroke="#1e1e1e" stroke-width="1.2"/>
+            <!-- Right sleeve -->
+            <path d="M210 30 Q220 35 218 65 L185 75 L180 45 Z" fill="#111" stroke="#1e1e1e" stroke-width="1.2"/>
+            <!-- Body -->
+            <path d="M40 45 Q35 30 50 15 Q70 5 90 10 L100 22 L130 10 Q150 5 170 15 Q185 30 180 45 L185 75 L185 250 Q185 258 175 258 L45 258 Q35 258 35 250 L35 75 Z" fill="#111111" stroke="#1e1e1e" stroke-width="1.5"/>
+            <!-- Collar -->
+            <path d="M90 10 Q100 0 110 10 L130 10 Q135 18 130 22 Q115 28 100 22 Q85 28 70 22 Q65 18 70 10 Z" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+            <!-- Subtle body seam down center -->
+            <line x1="110" y1="25" x2="110" y2="258" stroke="#191919" stroke-width="1" opacity="0.4"/>
+            <!-- Shoulder seams -->
+            <line x1="40" y1="45" x2="35" y2="75" stroke="#191919" stroke-width="1" opacity="0.5"/>
+            <line x1="180" y1="45" x2="185" y2="75" stroke="#191919" stroke-width="1" opacity="0.5"/>
+
+            <!-- SOLAR PLEXUS = roughly center chest, slightly below midpoint of torso -->
+            <!-- Solar plexus area: x=110, y=145 approx -->
+            <!-- SMALL RED EYE -->
+            <ellipse cx="110" cy="148" rx="11" ry="6.5" fill="#8B0000" stroke="#660000" stroke-width="0.8"/>
+            <ellipse cx="110" cy="148" rx="7" ry="4" fill="#5a0000"/>
+            <ellipse cx="110" cy="148" rx="3.8" ry="2.3" fill="#080000"/>
+            <ellipse cx="107" cy="146.2" rx="1.6" ry="1" fill="rgba(255,150,150,0.22)"/>
+            <!-- very subtle glow ring -->
+            <ellipse cx="110" cy="148" rx="13.5" ry="8" fill="none" stroke="#8B0000" stroke-width="0.5" opacity="0.25"/>
+
+            <!-- Hem stitching -->
+            <line x1="35" y1="252" x2="185" y2="252" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+            <!-- Sleeve cuff stitching -->
+            <line x1="2" y1="62" x2="35" y2="72" stroke="#1a1a1a" stroke-width="1" opacity="0.4"/>
+            <line x1="218" y1="62" x2="185" y2="72" stroke="#1a1a1a" stroke-width="1" opacity="0.4"/>
+        </svg>
+    </div>
+    <div class="slide-info">
+        <div class="slide-num">ARCHIVE — 03 / 05</div>
+        <h2 class="prod-title">SOVEREIGN<br>TEE</h2>
+        <div class="prod-rule"></div>
+        <p class="prod-desc">Heavyweight 320gsm cotton.<br>Minimal noise.<br>Worn by those who<br>need no proof.</p>
+        <button class="acquire-btn" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+    </div>
+</div>
+
+<!-- ─── SLIDE 4: SWEATSHIRT ─── -->
+<div class="slide" data-index="3">
+    <div class="slide-img">
+        <!-- GENTLE RED SWEATSHIRT, BLACK EYE AT SOLAR PLEXUS CENTER -->
+        <svg viewBox="0 0 220 270" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- Gentle red: #9B2B2B — warm, not harsh -->
+            <!-- Left sleeve (long, sweatshirt) -->
+            <path d="M8 40 Q-2 50 0 100 L5 200 Q5 208 12 208 L38 205 L42 75 Z" fill="#8a2424" stroke="#721e1e" stroke-width="1.2"/>
+            <!-- Right sleeve -->
+            <path d="M212 40 Q222 50 220 100 L215 200 Q215 208 208 208 L182 205 L178 75 Z" fill="#8a2424" stroke="#721e1e" stroke-width="1.2"/>
+            <!-- Body -->
+            <path d="M42 75 Q38 50 50 28 Q68 12 90 16 L100 26 L130 16 Q152 12 170 28 Q182 50 178 75 L182 205 L182 258 Q182 265 173 265 L47 265 Q38 265 38 258 L38 205 Z" fill="#9B2B2B" stroke="#811f1f" stroke-width="1.5"/>
+            <!-- Collar ribbing (crew neck) -->
+            <path d="M90 16 Q100 6 110 16 L130 16 Q136 25 128 30 Q114 36 100 30 Q86 36 72 30 Q64 25 70 16 Z" fill="#7a1f1f" stroke="#721e1e" stroke-width="1.2"/>
+            <!-- Ribbing lines collar -->
+            <path d="M82 24 Q100 30 118 24" stroke="#6a1a1a" stroke-width="0.8" fill="none" opacity="0.6"/>
+            <!-- Waistband ribbing at bottom -->
+            <rect x="38" y="252" width="144" height="13" rx="3" fill="#7a1f1f" stroke="#661a1a" stroke-width="1"/>
+            <line x1="38" y1="258" x2="182" y2="258" stroke="#661a1a" stroke-width="0.8" opacity="0.5"/>
+            <!-- Cuff ribbing left -->
+            <path d="M0 195" fill="none"/>
+            <rect x="0" y="193" width="38" height="15" rx="3" fill="#7a1f1f" stroke="#661a1a" stroke-width="1"/>
+            <!-- Cuff ribbing right -->
+            <rect x="182" y="193" width="38" height="15" rx="3" fill="#7a1f1f" stroke="#661a1a" stroke-width="1"/>
+            <!-- Subtle center seam -->
+            <line x1="110" y1="32" x2="110" y2="252" stroke="#881f1f" stroke-width="0.8" opacity="0.3"/>
+            <!-- Shoulder seams -->
+            <line x1="42" y1="75" x2="38" y2="205" stroke="#7a1f1f" stroke-width="0.8" opacity="0.35"/>
+            <line x1="178" y1="75" x2="182" y2="205" stroke="#7a1f1f" stroke-width="0.8" opacity="0.35"/>
+
+            <!-- SOLAR PLEXUS: center of body, about y=152 -->
+            <!-- BLACK EYE -->
+            <ellipse cx="110" cy="152" rx="12" ry="7" fill="#0a0a0a" stroke="#111" stroke-width="0.8"/>
+            <ellipse cx="110" cy="152" rx="7.5" ry="4.3" fill="#1a0000"/>
+            <ellipse cx="110" cy="152" rx="4" ry="2.4" fill="#030303"/>
+            <ellipse cx="107" cy="150.2" rx="1.8" ry="1.1" fill="rgba(255,255,255,0.28)"/>
+            <!-- subtle shadow ring on garment -->
+            <ellipse cx="110" cy="152" rx="15" ry="8.5" fill="none" stroke="#0a0a0a" stroke-width="1" opacity="0.25"/>
+        </svg>
+    </div>
+    <div class="slide-info">
+        <div class="slide-num">ARCHIVE — 04 / 05</div>
+        <h2 class="prod-title">ELIS<br>SWEATSHIRT</h2>
+        <div class="prod-rule"></div>
+        <p class="prod-desc">Maximal comfort.<br>The mid-tier standard.<br>Quiet authority,<br>every layer.</p>
+        <button class="acquire-btn" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+    </div>
+</div>
+
+<!-- ─── SLIDE 5: HOODIE ─── -->
+<div class="slide" data-index="4">
+    <div class="slide-img">
+        <!-- BLACK HOODIE, MEDIUM BLOOD-RED EYE AT LEFT CHEST (NIKE LOGO POSITION) -->
+        <svg viewBox="0 0 230 290" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <!-- Long sleeve left -->
+            <path d="M6 55 Q-4 65 -2 120 L3 220 Q3 230 11 230 L40 226 L46 88 Z" fill="#111" stroke="#1e1e1e" stroke-width="1.2"/>
+            <!-- Long sleeve right -->
+            <path d="M224 55 Q234 65 232 120 L227 220 Q227 230 219 230 L190 226 L184 88 Z" fill="#111" stroke="#1e1e1e" stroke-width="1.2"/>
+            <!-- Body -->
+            <path d="M46 88 Q42 62 55 38 Q72 18 92 20 L100 28 L115 20 Q135 18 155 28 Q168 38 184 62 L184 88 L188 226 L188 272 Q188 280 178 280 L52 280 Q42 280 42 272 L42 226 Z" fill="#111111" stroke="#1e1e1e" stroke-width="1.5"/>
+            <!-- Hood -->
+            <path d="M92 20 Q100 0 115 20 L135 18 Q155 10 162 30 Q168 45 162 60 L150 68 Q130 55 115 52 Q100 50 85 52 L68 60 Q62 45 68 30 Q75 10 92 20 Z" fill="#0d0d0d" stroke="#1c1c1c" stroke-width="1.2"/>
+            <!-- Hood inner shadow -->
+            <path d="M92 20 Q100 8 115 20 L130 18 Q148 14 155 32 Q160 44 155 56 L145 62 Q125 50 115 48 Q100 46 88 48 L75 58 Q70 44 75 32 Q82 14 92 20 Z" fill="#080808" opacity="0.6"/>
+            <!-- Drawstring -->
+            <line x1="100" y1="50" x2="94" y2="88" stroke="#222" stroke-width="1.2"/>
+            <line x1="115" y1="50" x2="121" y2="88" stroke="#222" stroke-width="1.2"/>
+            <!-- Center zipper line (no zip, just seam) -->
+            <line x1="107" y1="88" x2="107" y2="280" stroke="#191919" stroke-width="1" opacity="0.4"/>
+            <!-- Kangaroo pocket outline -->
+            <path d="M65 180 Q65 165 75 162 L145 162 Q155 165 155 180 L155 218 Q155 226 145 226 L75 226 Q65 224 65 218 Z" stroke="#191919" stroke-width="1" fill="none" opacity="0.4"/>
+            <!-- Shoulder seams -->
+            <line x1="46" y1="88" x2="42" y2="226" stroke="#181818" stroke-width="0.8" opacity="0.4"/>
+            <line x1="184" y1="88" x2="188" y2="226" stroke="#181818" stroke-width="0.8" opacity="0.4"/>
+            <!-- Cuff ribbing left -->
+            <rect x="-2" y="218" width="42" height="12" rx="3" fill="#161616" stroke="#222" stroke-width="0.8"/>
+            <!-- Cuff ribbing right -->
+            <rect x="190" y="218" width="42" height="12" rx="3" fill="#161616" stroke="#222" stroke-width="0.8"/>
+            <!-- Hem ribbing -->
+            <rect x="42" y="268" width="146" height="12" rx="3" fill="#161616" stroke="#222" stroke-width="0.8"/>
+
+            <!-- NIKE LOGO POSITION = left chest, about x=75, y=108 -->
+            <!-- MEDIUM BLOOD-RED EYE -->
+            <ellipse cx="78" cy="110" rx="14" ry="8.5" fill="#8B0000" stroke="#660000" stroke-width="1"/>
+            <ellipse cx="78" cy="110" rx="9" ry="5.2" fill="#5a0000"/>
+            <ellipse cx="78" cy="110" rx="5" ry="3" fill="#0a0000"/>
+            <ellipse cx="74.5" cy="107.8" rx="2.2" ry="1.4" fill="rgba(255,160,160,0.22)"/>
+            <!-- glow -->
+            <ellipse cx="78" cy="110" rx="17" ry="10.5" fill="none" stroke="#8B0000" stroke-width="0.8" opacity="0.28"/>
+        </svg>
+    </div>
+    <div class="slide-info">
+        <div class="slide-num">ARCHIVE — 05 / 05</div>
+        <h2 class="prod-title">ETHIC<br>HOODIE</h2>
+        <div class="prod-rule"></div>
+        <p class="prod-desc">The supreme asset.<br>Spiritual armor.<br>The standard, completed.</p>
+        <button class="acquire-btn" onclick="showPopup('form')">ACQUIRE THIS STANDARD</button>
+    </div>
+</div>
+
+</div><!-- /product-shell -->
+
+<!-- END POPUP -->
+<div id="end-popup">
+    <div class="bat-eyes"><div class="bat-eye"></div><div class="bat-eye"></div></div>
+    <p class="end-title">More Elegance<br>On The Way</p>
+    <button class="nav-arrow" onclick="prevFromEnd()" style="margin-top:8px;border-color:rgba(255,255,255,0.15);">[ PREVIOUS ]</button>
+</div>
+
+<!-- NAV BAR -->
+<div class="nav-bar" id="nav-bar">
+    <button class="nav-arrow" id="btn-prev" onclick="navigate(-1)" disabled>[ PREV ]</button>
+    <div class="dot-row" id="dot-row"></div>
+    <button class="nav-arrow" id="btn-next" onclick="navigate(1)">[ NEXT ]</button>
 </div>
 
 <script>
-    const DATA = [
-        { id: 'VAL-01', title: 'ARCHIVE SOCKS', desc: 'THE FOUNDATION. REINFORCED FOR THE PATH.' },
-        { id: 'VAL-02', title: 'SOVEREIGN TEE', desc: 'HEAVYWEIGHT 320GSM COTTON. MINIMAL NOISE.' },
-        { id: 'VAL-03', title: 'VOID SWEATPANTS', desc: 'ARCHITECTURAL CUT. DESIGNED FOR STILLNESS.' },
-        { id: 'VAL-04', title: 'ELIS SWEATSHIRT', desc: 'MAXIMAL COMFORT. THE MID-TIER STANDARD.' },
-        { id: 'VAL-05', title: 'ETHIC HOODIE', desc: 'THE SUPREME ASSET. SPIRITUAL ARMOR.' }
-    ];
-
-    const canvas = document.getElementById('bg-canvas');
-    for (let i = 0; i < 15; i++) {
+    /* RAIN */
+    const bgCanvas = document.getElementById('bg-canvas');
+    for (let i = 0; i < 18; i++) {
         const c = document.createElement('div');
         c.className = 'comet';
         c.style.left = Math.random() * 100 + '%';
-        c.style.animationDuration = (Math.random() * 1 + 1) + 's';
-        canvas.appendChild(c);
+        c.style.animationDuration = (Math.random() * 1.2 + 0.7) + 's';
+        c.style.animationDelay = (Math.random() * 2.5) + 's';
+        bgCanvas.appendChild(c);
     }
 
-    const grid = document.getElementById('main-grid');
-    DATA.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'item';
-        div.innerHTML = `<span style="opacity:0.1; font-size:0.4rem; letter-spacing:0.3rem;">ARCHIVE</span><span style="font-size:0.55rem; letter-spacing:0.4rem; margin-top:12px; font-weight:900;">${item.id}</span>`;
-        div.onclick = () => {
-            document.getElementById('art-title').innerText = item.title;
-            document.getElementById('art-desc').innerText = item.desc;
-            document.getElementById('article-panel').classList.add('active');
-        };
-        grid.appendChild(div);
-    });
+    const TOTAL = 5;
+    let current = 0, transitioning = false;
 
+    /* DOTS */
+    const dotRow = document.getElementById('dot-row');
+    for (let i = 0; i < TOTAL + 1; i++) {
+        const d = document.createElement('div');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        dotRow.appendChild(d);
+    }
+    function updateDots(idx) {
+        document.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i === idx));
+    }
+
+    /* POPUP */
     function showPopup(type) {
         const layer = document.getElementById('popup-layer');
-        document.getElementById('content-music').style.display = 'none';
-        document.getElementById('content-form').style.display = 'none';
-        document.getElementById('content-success').style.display = 'none';
-        document.getElementById('content-' + type).style.display = 'flex';
-        layer.style.display = 'flex';
-        layer.style.pointerEvents = 'auto';
-        setTimeout(() => { layer.style.opacity = '1'; }, 10);
+        ['music','form','success'].forEach(t => document.getElementById('content-'+t).style.display='none');
+        document.getElementById('content-'+type).style.display='flex';
+        layer.style.display='flex'; layer.style.pointerEvents='auto';
+        requestAnimationFrame(()=>{ layer.style.opacity='1'; });
     }
-
     function hidePopup() {
         const layer = document.getElementById('popup-layer');
-        layer.style.opacity = '0';
-        layer.style.pointerEvents = 'none';
-        setTimeout(() => { layer.style.display = 'none'; }, 400);
+        layer.style.opacity='0'; layer.style.pointerEvents='none';
+        setTimeout(()=>{ layer.style.display='none'; },400);
     }
+    function triggerSuccess() { showPopup('success'); setTimeout(hidePopup,2500); }
 
+    /* ENTER */
     function enterArchive() {
         hidePopup();
         document.body.classList.add('revealed');
-        document.getElementById('landing-layer').style.display = 'none';
-        document.getElementById('archive-layer').style.display = 'flex';
-        setTimeout(() => { document.getElementById('archive-layer').style.opacity = '1'; }, 100);
-        document.getElementById('enq').style.display = 'block';
+        const landing = document.getElementById('landing-layer');
+        landing.style.opacity='0';
+        setTimeout(()=>{ landing.style.display='none'; },400);
+        const shell = document.getElementById('product-shell');
+        shell.style.display='block';
+        requestAnimationFrame(()=>{ shell.style.opacity='1'; });
+        document.getElementById('nav-bar').style.display='flex';
+        document.getElementById('exit-btn').style.display='block';
+        document.getElementById('enq').style.display='block';
+        current=0; updateDots(0); updateNav();
     }
 
-    function closeArt() { document.getElementById('article-panel').classList.remove('active'); }
+    /* NAVIGATE */
+    function navigate(dir) {
+        if (transitioning) return;
+        const target = current + dir;
+        if (target >= TOTAL) { openEnd(); return; }
+        if (target < 0) return;
+        transitioning = true;
+        const slides = document.querySelectorAll('.slide');
+        const oldSlide = slides[current];
+        const newSlide = slides[target];
+        oldSlide.classList.add(dir>0?'slide-exit-left':'slide-exit-right');
+        oldSlide.classList.remove('active');
+        newSlide.classList.add(dir>0?'slide-enter-right':'slide-enter-left');
+        newSlide.getBoundingClientRect();
+        newSlide.classList.remove('slide-enter-right','slide-enter-left');
+        newSlide.classList.add('active');
+        current=target; updateDots(current); updateNav();
+        setTimeout(()=>{ oldSlide.classList.remove('slide-exit-left','slide-exit-right'); transitioning=false; },600);
+    }
+    function updateNav() {
+        document.getElementById('btn-prev').disabled=(current===0);
+        document.getElementById('btn-next').disabled=false;
+    }
 
+    /* END */
+    function openEnd() {
+        const ep=document.getElementById('end-popup');
+        ep.classList.add('open');
+        requestAnimationFrame(()=>{ ep.style.opacity='1'; ep.style.pointerEvents='auto'; });
+        document.getElementById('nav-bar').style.display='none';
+        updateDots(TOTAL);
+    }
+    function prevFromEnd() {
+        const ep=document.getElementById('end-popup');
+        ep.style.opacity='0'; ep.style.pointerEvents='none';
+        setTimeout(()=>{ ep.classList.remove('open'); },500);
+        document.getElementById('nav-bar').style.display='flex';
+        const slides=document.querySelectorAll('.slide');
+        const target=TOTAL-1;
+        slides[target].classList.add('slide-enter-left');
+        slides[target].getBoundingClientRect();
+        slides[target].classList.remove('slide-enter-left');
+        slides[target].classList.add('active');
+        current=target; updateDots(current); updateNav();
+    }
+
+    /* EXIT */
     function exitToLanding() {
-        document.getElementById('archive-layer').style.opacity = '0';
-        setTimeout(() => {
-            document.getElementById('archive-layer').style.display = 'none';
-            document.getElementById('landing-layer').style.display = 'flex';
-            document.getElementById('landing-layer').style.opacity = '1';
-            document.body.classList.remove('revealed');
-            document.getElementById('enq').style.display = 'none';
-        }, 400);
+        const ep=document.getElementById('end-popup');
+        ep.style.opacity='0'; ep.style.pointerEvents='none';
+        setTimeout(()=>{ ep.classList.remove('open'); },500);
+        const shell=document.getElementById('product-shell');
+        shell.style.opacity='0';
+        setTimeout(()=>{ shell.style.display='none'; },500);
+        document.getElementById('nav-bar').style.display='none';
+        document.getElementById('exit-btn').style.display='none';
+        document.getElementById('enq').style.display='none';
+        document.querySelectorAll('.slide').forEach((s,i)=>{
+            s.classList.remove('active','slide-exit-left','slide-exit-right','slide-enter-right','slide-enter-left');
+            s.style.transform=''; if(i===0) s.classList.add('active');
+        });
+        current=0; updateDots(0); transitioning=false;
+        document.body.classList.remove('revealed');
+        const landing=document.getElementById('landing-layer');
+        landing.style.display='flex';
+        requestAnimationFrame(()=>{ landing.style.opacity='1'; });
     }
 
-    function triggerSuccess() {
-        showPopup('success');
-        setTimeout(() => { hidePopup(); }, 2500);
-    }
+    /* SWIPE */
+    let touchStartX=0,touchStartY=0;
+    document.addEventListener('touchstart',e=>{ touchStartX=e.touches[0].clientX; touchStartY=e.touches[0].clientY; },{passive:true});
+    document.addEventListener('touchend',e=>{
+        const dx=touchStartX-e.changedTouches[0].clientX;
+        const dy=Math.abs(touchStartY-e.changedTouches[0].clientY);
+        if(Math.abs(dx)>50&&dy<60){
+            const ep=document.getElementById('end-popup');
+            const endOpen=ep.classList.contains('open')&&parseFloat(ep.style.opacity)>0.5;
+            if(endOpen){ if(dx<0) prevFromEnd(); return; }
+            navigate(dx>0?1:-1);
+        }
+    },{passive:true});
 </script>
 </body>
 </html>
